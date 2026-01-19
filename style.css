@@ -47,8 +47,11 @@ body {
     font-family: var(--font-body);
     font-size: 16px;
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    position: relative; /* Ensure layout context */
 }
+
+html { overflow-x: hidden; } /* Double safety */
 
 /* Background FX */
 .bg-glow {
