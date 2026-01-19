@@ -662,8 +662,29 @@ html { overflow-x: hidden; } /* Double safety */
         font-size: 1.5rem;
     }
 
-    .hero-btns { justify-content: center; }
-    .social-mini { justify-content: center; }
+    .hero-subtitle { 
+        justify-content: center; 
+        font-size: 1.5rem;
+    }
+
+    /* Stack Buttons on Mobile for Symmetry */
+    .hero-btns { 
+        flex-direction: column; /* Stack Top-Down */
+        gap: 1.5rem; 
+        width: 100%;
+    }
+    
+    .btn { width: 100%; max-width: 300px; justify-content: center; } /* Wide centered button */
+
+    .social-mini { 
+        display: flex; 
+        gap: 1rem; 
+        justify-content: center;
+        width: 100%; /* Full width container */
+    }
+    
+    /* Ensure icons don't squash */
+    .social-mini a { flex-shrink: 0; }
 
     /* Scale down Profile for Mobile */
     .profile-wrapper { 
@@ -673,4 +694,12 @@ html { overflow-x: hidden; } /* Double safety */
     .profile-back-glow { width: 300px; height: 300px; } /* Adjust glow */
 
     .cta-content-flex { flex-direction: column; gap: 1.5rem; text-align: center; }
+}
+
+/* --- GLOBAL RESET: NO UNDERLINES --- */
+a, a:hover, a:focus, a:active,
+.btn, .btn:hover,
+.nav-links a,
+.social-mini a, .footer-socials a {
+    text-decoration: none !important;
 }
