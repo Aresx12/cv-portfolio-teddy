@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy Rayos | Ingeniero de Software Full Stack</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="default">
+
+    <!-- Background Effects -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="grid-overlay"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="navbar">
+      <div class="container nav-container">
+
+        <ul class="nav-links">
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#stack">Stack</a></li>
+        </ul>
+        <a href="assets/CV_Teddy_Rayos_Ponce.pdf" class="btn-nav btn-cv-mobile" download>Descargar CV</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero section">
+        <div class="container hero-container">
+           <div class="hero-content">
+
+             <h1 class="hero-title">Hola, soy <br><span class="gradient-text">Teddy Rayos</span></h1>
+             <h2 class="hero-subtitle">Ingeniero de Software</h2>
+             <p class="hero-description">
+               Transformo ideas complejas en soluciones digitales elegantes. 
+               Especializado en arquitecturas escalables y experiencias de usuario inmersivas.
+             </p>
+             <div class="hero-btns">
+               <a href="assets/CV_Teddy_Rayos_Ponce.pdf" class="btn btn-primary" download>Descargar CV <i class="ri-download-line"></i></a>
+               <div class="social-mini">
+                 <a href="#"><i class="ri-github-fill"></i></a>
+                 <a href="#"><i class="ri-linkedin-fill"></i></a>
+                 <a href="#"><i class="ri-twitter-x-fill"></i></a>
+               </div>
+             </div>
+           </div>
+
+           <div class="hero-image">
+           <div class="hero-image">
+             <div class="profile-wrapper">
+                <div class="profile-back-glow"></div>
+                <div class="profile-pulse"></div>
+                <div class="tech-ring"></div>
+                <img src="assets/profile-Photoroom.png" alt="Teddy Rayos" class="profile-img">
+             </div>
+           </div>
+           </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="experience section compact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <p class="section-subtitle">Trayectoria & Logros</p>
+          </div>
+
+          <div class="timeline">
+            <!-- Progress Line (Animated by JS) -->
+            <div class="timeline-progress"></div>
+            
+            <!-- Item 1 -->
+            <div class="timeline-item glass-card reveal-item">
+              <div class="timeline-date">Dic 2024 - Feb 2025</div>
+              <div class="timeline-content">
+                <h3>Técnico TIC</h3>
+                <span class="company">Centro Privado de Seguridad Industrial (Ecuador)</span>
+                <ul>
+                  <li><i class="ri-check-line"></i> Soporte de primer nivel durante digitalización de sistemas.</li>
+                  <li><i class="ri-check-line"></i> Gestión de credenciales y accesos remotos seguros.</li>
+                  <li><i class="ri-check-line"></i> Documentación de procedimientos técnicos.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="timeline-item glass-card reveal-item">
+              <div class="timeline-date">Sept 2023 - Feb 2024</div>
+              <div class="timeline-content">
+                <h3>Programador Junior</h3>
+                <span class="company">Escuela Superior Politécnica de Chimborazo</span>
+                <ul>
+                  <li><i class="ri-check-line"></i> Desarrollo de módulo financiero con SQL complejo.</li>
+                  <li><i class="ri-check-line"></i> Refactorización del Sistema de Pólizas (estabilidad).</li>
+                  <li><i class="ri-check-line"></i> Diagnóstico y corrección de integridad de datos.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="timeline-item glass-card reveal-item">
+              <div class="timeline-date">Mar 2023 - Ago 2023</div>
+              <div class="timeline-content">
+                <h3>FullStack Junior</h3>
+                <span class="company">Farmacia Particular "Pharmacity"</span>
+                <ul>
+                  <li><i class="ri-check-line"></i> Sistema de Gestión Farmacéutica desde cero (Full Stack).</li>
+                  <li><i class="ri-check-line"></i> Implementación de roles, permisos y seguridad.</li>
+                  <li><i class="ri-check-line"></i> Optimización de flujos de trabajo (reducción de tiempos).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="projects section compact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Proyectos</h2>
+            <p class="section-subtitle">Casos de Estudio</p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: SAVELIFE -->
+            <article class="project-card glass-card reveal-item">
+              <div class="project-image">
+                 <div class="img-placeholder p-gradient-1">
+                    <i class="ri-pulse-line"></i>
+                 </div>
+              </div>
+              <div class="project-content">
+                <div class="project-top">
+                    <h3>SAVELIFE</h3>
+                    <span class="project-tag">HealthTech</span>
+                </div>
+                <div class="project-details">
+                    <p><strong>Reto:</strong> Errores en prescripción e inventario.</p>
+                    <p><strong>Solución:</strong> Trazabilidad real-time y digitalización total.</p>
+                </div>
+                <div class="project-tech-mini">
+                  <i class="ri-angularjs-fill"></i>
+                  <i class="ri-nodejs-line"></i>
+                  <i class="ri-database-2-line"></i>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Medinova -->
+            <article class="project-card glass-card reveal-item">
+              <div class="project-image">
+                 <div class="img-placeholder p-gradient-2">
+                    <i class="ri-hospital-line"></i>
+                 </div>
+              </div>
+              <div class="project-content">
+                <div class="project-top">
+                    <h3>Medinova</h3>
+                    <span class="project-tag">Gestión</span>
+                </div>
+                <div class="project-details">
+                    <p><strong>Reto:</strong> Ineficiencia en citas y agenda.</p>
+                    <p><strong>Solución:</strong> Agendamiento inteligente automatizado.</p>
+                </div>
+                <div class="project-tech-mini">
+                  <i class="ri-code-s-slash-line"></i>
+                  <i class="ri-server-line"></i>
+                  <i class="ri-database-fill"></i>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- STACK SECTION -->
+      <section id="stack" class="stack section compact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Stack</h2>
+          </div>
+
+          <div class="scroller" data-speed="slow">
+            <div class="scroller-inner">
+             <!-- Frontend -->
+             <div class="stack-item" title="Angular 16+">
+                 <i class="ri-angularjs-fill"></i>
+                 <span>Angular 16+</span>
+             </div>
+             <div class="stack-item" title="TypeScript">
+                 <i class="ri-code-s-slash-line"></i>
+                 <span>TypeScript</span>
+             </div>
+             <div class="stack-item" title="Tailwind CSS">
+                 <i class="ri-paint-brush-line"></i>
+                 <span>Tailwind CSS</span>
+             </div>
+             <div class="stack-item" title="HTML5/CSS3">
+                 <i class="ri-html5-fill"></i>
+                 <span>HTML5/CSS3</span>
+             </div>
+
+             <!-- Backend & DB -->
+             <div class="stack-item" title="Node.js">
+                 <i class="ri-nodejs-line"></i>
+                 <span>Node.js</span>
+             </div>
+             <div class="stack-item" title="Express">
+                 <i class="ri-server-line"></i>
+                 <span>Express</span>
+             </div>
+             <div class="stack-item" title="PostgreSQL">
+                 <i class="ri-database-2-line"></i>
+                 <span>PostgreSQL</span>
+             </div>
+             <div class="stack-item" title="SQL Server">
+                 <i class="ri-database-fill"></i>
+                 <span>SQL Server</span>
+             </div>
+
+             <!-- Cloud & Tools -->
+             <div class="stack-item" title="Azure">
+                 <i class="ri-cloud-fill"></i>
+                 <span>Azure</span>
+             </div>
+             <div class="stack-item" title="Git">
+                 <i class="ri-git-merge-line"></i>
+                 <span>Git</span>
+             </div>
+             <div class="stack-item" title="Postman">
+                 <i class="ri-send-plane-fill"></i>
+                 <span>Postman</span>
+             </div>
+             <div class="stack-item" title="Microsoft 365">
+                 <i class="ri-microsoft-fill"></i>
+                 <span>Microsoft 365</span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section id="contact" class="cta section compact-section">
+        <div class="container">
+          <div class="cta-card gradient-bg reveal-item">
+            <div class="cta-content-flex">
+                <div class="cta-text">
+                    <h2>¿Listo para optimizar tu equipo?</h2>
+                    <p>Arquitectura de software sólida y moderna.</p>
+                </div>
+                <div class="cta-btns">
+                  <a href="mailto:henryrayos69@gmail.com" class="btn btn-white">
+                    <i class="ri-mail-send-line"></i> Contactar
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <a href="#" class="logo footer-logo">
+             <img src="assets/logo-Photoroom.png" alt="TR Logo" class="logo-img">
+          </a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/henryrayos" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+          <a href="https://linkedin.com/in/henryrayos" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/henryrayos" target="_blank" aria-label="X (Twitter)"><i class="ri-twitter-x-fill"></i></a>
+        </div>
+        <div class="footer-copyright">
+          &copy; <span id="year"></span> Teddy Rayos.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-btn" aria-label="Cambiar Tema">
+        <i class="ri-palette-line"></i>
+    </button>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
