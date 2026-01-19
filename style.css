@@ -694,6 +694,13 @@ html { overflow-x: hidden; } /* Double safety */
     .profile-back-glow { width: 300px; height: 300px; } /* Adjust glow */
 
     .cta-content-flex { flex-direction: column; gap: 1.5rem; text-align: center; }
+
+    /* Footer Mobile Stack */
+    .footer-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .footer-socials { margin-bottom: 0.5rem; }
 }
 
 /* --- GLOBAL RESET: NO UNDERLINES --- */
