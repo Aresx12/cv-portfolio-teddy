@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -138,10 +138,10 @@
           <div class="projects-grid">
             <!-- Project 1: SAVELIFE -->
             <article class="project-card glass-card reveal-item">
-              <div class="project-image">
-                 <div class="img-placeholder p-gradient-1">
-                    <i class="ri-pulse-line"></i>
-                 </div>
+      <div class="project-image">
+                 <!-- Image for SAVELIFE -->
+                 <!-- Image for SAVELIFE -->
+                 <img src="assets/SaveLife-Logo.png" alt="SAVELIFE Logo" class="project-img">
               </div>
               <div class="project-content">
                 <div class="project-top">
@@ -149,23 +149,28 @@
                     <span class="project-tag">HealthTech</span>
                 </div>
                 <div class="project-details">
-                    <p><strong>Reto:</strong> Errores en prescripción e inventario.</p>
-                    <p><strong>Solución:</strong> Trazabilidad real-time y digitalización total.</p>
+                    <p>Ecosistema integral para la automatización segura de recetas y trazabilidad farmacéutica en tiempo real.</p>
+                    <a href="https://github.com/Aresx12/SISTEMA-DE-GESTION-DE-MEDICA.git" target="_blank" class="project-code-link">
+                        <i class="ri-github-fill"></i> Ver Código
+                    </a>
                 </div>
                 <div class="project-tech-mini">
                   <i class="ri-angularjs-fill"></i>
+                  <i class="ri-code-s-slash-line"></i>
+                  <i class="ri-paint-brush-line"></i>
                   <i class="ri-nodejs-line"></i>
                   <i class="ri-database-2-line"></i>
+                  <i class="ri-git-merge-line"></i>
                 </div>
               </div>
             </article>
 
             <!-- Project 2: Medinova -->
             <article class="project-card glass-card reveal-item">
-              <div class="project-image">
-                 <div class="img-placeholder p-gradient-2">
-                    <i class="ri-hospital-line"></i>
-                 </div>
+      <div class="project-image">
+                 <!-- Image for Medinova -->
+                 <!-- Image for Medinova -->
+                 <img src="assets/Medinova-logo.png" alt="Medinova Logo" class="project-img">
               </div>
               <div class="project-content">
                 <div class="project-top">
@@ -173,13 +178,19 @@
                     <span class="project-tag">Gestión</span>
                 </div>
                 <div class="project-details">
-                    <p><strong>Reto:</strong> Ineficiencia en citas y agenda.</p>
-                    <p><strong>Solución:</strong> Agendamiento inteligente automatizado.</p>
+                    <p>Motor de agendamiento inteligente que optimiza el flujo clínico y maximiza la eficiencia operativa.</p>
+                    <a href="https://github.com/Aresx12/GESTION-DE-CITAS.git" target="_blank" class="project-code-link">
+                        <i class="ri-github-fill"></i> Ver Código
+                    </a>
                 </div>
                 <div class="project-tech-mini">
+                  <i class="ri-html5-fill"></i>
                   <i class="ri-code-s-slash-line"></i>
+                  <i class="ri-nodejs-line"></i>
                   <i class="ri-server-line"></i>
                   <i class="ri-database-fill"></i>
+                  <i class="ri-git-merge-line"></i>
+                  <i class="ri-send-plane-fill"></i>
                 </div>
               </div>
             </article>
@@ -216,7 +227,7 @@
 
              <!-- Backend & DB -->
              <div class="stack-item" title="Node.js">
-                 <i class="ri-nodejs-line"></i>
+                 <img src="assets/nodejs-original.svg" alt="Node.js" class="stack-icon-svg">
                  <span>Node.js</span>
              </div>
              <div class="stack-item" title="Express">
@@ -291,6 +302,43 @@
     <button class="theme-toggle" id="theme-btn" aria-label="Cambiar Tema">
         <i class="ri-palette-line"></i>
     </button>
+
+    <!-- PROJECT MODAL -->
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content glass-card">
+            <button class="modal-close" aria-label="Cerrar">&times;</button>
+            
+            <div class="modal-body">
+                <!-- Gallery Section -->
+                <div class="modal-gallery">
+                    <button class="gallery-btn prev" aria-label="Imagen Anterior"><i class="ri-arrow-left-s-line"></i></button>
+                    <div class="gallery-stack" style="--k: 0; --n: 0">
+                        <!-- Images injected via JS -->
+                    </div>
+                    <button class="gallery-btn next" aria-label="Imagen Siguiente"><i class="ri-arrow-right-s-line"></i></button>
+                    <div class="gallery-indicators" id="gallery-dots"></div>
+                </div>
+
+                <!-- Info Section -->
+                <div class="modal-info">
+                    <h2 id="modal-title" class="gradient-text">Titulo del Proyecto</h2>
+                    <span id="modal-tag" class="project-tag">Tag</span>
+                    <p id="modal-desc" class="modal-description">Descripción...</p>
+                    
+                    <div class="modal-tech-stack" id="modal-stack">
+                        <!-- Icons injected here -->
+                    </div>
+
+                    <div class="modal-actions">
+                        <a href="#" id="modal-repo" target="_blank" class="btn btn-primary">
+                            <i class="ri-github-fill"></i> Ver Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
