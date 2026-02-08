@@ -28,11 +28,13 @@
       <div class="container nav-container">
 
         <ul class="nav-links">
-          <li><a href="#experience">Experiencia</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#stack">Stack</a></li>
+          <li><a href="#experience" data-i18n="nav-experience">Experiencia</a></li>
+          <li><a href="#projects" data-i18n="nav-projects">Proyectos</a></li>
+          <li><a href="#stack" data-i18n="nav-stack">Stack</a></li>
         </ul>
-        <a href="assets/CV_Teddy_Rayos_Ponce.pdf" class="btn-nav btn-cv-mobile" download>Descargar CV</a>
+        <div class="nav-cv-wrapper">
+             <a href="assets/CV_Teddy_Rayos_Ponce.pdf" class="btn-nav btn-cv-mobile" download data-i18n="btn-cv-es">CV (ES)</a>
+        </div>
       </div>
     </nav>
 
@@ -42,14 +44,21 @@
         <div class="container hero-container">
            <div class="hero-content">
 
-             <h1 class="hero-title">Hola, soy <br><span class="gradient-text">Teddy Rayos</span></h1>
-             <h2 class="hero-subtitle">Ingeniero de Software</h2>
-             <p class="hero-description">
+             <h1 class="hero-title"><span data-i18n="hero-greeting">Hola, soy</span> <br><span class="gradient-text">Teddy Rayos</span></h1>
+             <h2 class="hero-subtitle" data-i18n="hero-role">Ingeniero de Software</h2>
+             <p class="hero-description" data-i18n="hero-desc">
                Transformo ideas complejas en soluciones digitales elegantes. 
                Especializado en arquitecturas escalables y experiencias de usuario inmersivas.
              </p>
              <div class="hero-btns">
-               <a href="assets/CV_Teddy_Rayos_Ponce.pdf" class="btn btn-primary" download>Descargar CV <i class="ri-download-line"></i></a>
+               <div class="cv-group">
+                   <a href="assets/CV_Teddy_Rayos_Ponce.pdf" class="btn btn-primary" download>
+                        <span data-i18n="btn-download-es">CV Español</span> <i class="ri-download-line"></i>
+                   </a>
+                   <a href="assets/CV_Teddy_Rayos_Ponce_EN.pdf" class="btn btn-glass-action" download>
+                        <span data-i18n="btn-download-en">CV English</span> <i class="ri-download-line"></i>
+                   </a>
+               </div>
                <div class="social-mini">
                  <a href="https://github.com/Aresx12" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
                  <a href="https://www.linkedin.com/in/teddy-rayos-268a72309" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
@@ -74,8 +83,8 @@
       <section id="experience" class="experience section compact-section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Experiencia Profesional</h2>
-            <p class="section-subtitle">Trayectoria & Logros</p>
+            <h2 class="section-title" data-i18n="exp-title">Experiencia Profesional</h2>
+            <p class="section-subtitle" data-i18n="exp-subtitle">Trayectoria & Logros</p>
           </div>
 
           <div class="timeline">
@@ -84,42 +93,42 @@
             
             <!-- Item 1 -->
             <div class="timeline-item glass-card reveal-item">
-              <div class="timeline-date">Dic 2024 - Feb 2025</div>
+              <div class="timeline-date" data-i18n="exp-1-date">Dic 2024 - Feb 2025</div>
               <div class="timeline-content">
-                <h3>Técnico TIC</h3>
-                <span class="company">Centro Privado de Seguridad Industrial (Ecuador)</span>
+                <h3 data-i18n="exp-1-role">Técnico TIC</h3>
+                <span class="company" data-i18n="exp-1-company">Centro Privado de Seguridad Industrial (Ecuador)</span>
                 <ul>
-                  <li><i class="ri-check-line"></i> Soporte de primer nivel durante digitalización de sistemas.</li>
-                  <li><i class="ri-check-line"></i> Gestión de credenciales y accesos remotos seguros.</li>
-                  <li><i class="ri-check-line"></i> Documentación de procedimientos técnicos.</li>
+                  <li><i class="ri-check-line"></i> <span data-i18n="exp-1-desc-1">Soporte de primer nivel durante digitalización de sistemas.</span></li>
+                  <li><i class="ri-check-line"></i> <span data-i18n="exp-1-desc-2">Gestión de credenciales y accesos remotos seguros.</span></li>
+                  <li><i class="ri-check-line"></i> <span data-i18n="exp-1-desc-3">Documentación de procedimientos técnicos.</span></li>
                 </ul>
               </div>
             </div>
 
             <!-- Item 2 -->
             <div class="timeline-item glass-card reveal-item">
-              <div class="timeline-date">Sept 2023 - Feb 2024</div>
+              <div class="timeline-date" data-i18n="exp-2-date">Sept 2023 - Feb 2024</div>
               <div class="timeline-content">
-                <h3>Programador Junior</h3>
-                <span class="company">Escuela Superior Politécnica de Chimborazo</span>
+                <h3 data-i18n="exp-2-role">Programador de Software</h3>
+                <span class="company" data-i18n="exp-2-company">Escuela Superior Politécnica de Chimborazo</span>
                 <ul>
-                  <li><i class="ri-check-line"></i> Desarrollo de módulo financiero con SQL complejo.</li>
-                  <li><i class="ri-check-line"></i> Refactorización del Sistema de Pólizas (estabilidad).</li>
-                  <li><i class="ri-check-line"></i> Diagnóstico y corrección de integridad de datos.</li>
+                  <li><i class="ri-check-line"></i> <span data-i18n="exp-2-desc-1">Desarrollo de módulo financiero con SQL complejo.</span></li>
+                  <li><i class="ri-check-line"></i> <span data-i18n="exp-2-desc-2">Refactorización del Sistema de Pólizas (estabilidad).</span></li>
+                  <li><i class="ri-check-line"></i> <span data-i18n="exp-2-desc-3">Diagnóstico y corrección de integridad de datos.</span></li>
                 </ul>
               </div>
             </div>
 
             <!-- Item 3 -->
             <div class="timeline-item glass-card reveal-item">
-              <div class="timeline-date">Mar 2023 - Ago 2023</div>
+              <div class="timeline-date" data-i18n="exp-3-date">Mar 2023 - Ago 2023</div>
               <div class="timeline-content">
-                <h3>FullStack Junior</h3>
-                <span class="company">Farmacia Particular "Pharmacity"</span>
+                <h3 data-i18n="exp-3-role">FullStack Developer</h3>
+                <span class="company" data-i18n="exp-3-company">Farmacia Particular "Pharmacity"</span>
                 <ul>
-                  <li><i class="ri-check-line"></i> Sistema de Gestión Farmacéutica desde cero (Full Stack).</li>
-                  <li><i class="ri-check-line"></i> Implementación de roles, permisos y seguridad.</li>
-                  <li><i class="ri-check-line"></i> Optimización de flujos de trabajo (reducción de tiempos).</li>
+                  <li><i class="ri-check-line"></i> <span data-i18n="exp-3-desc-1">Sistema de Gestión Farmacéutica desde cero (Full Stack).</span></li>
+                  <li><i class="ri-check-line"></i> <span data-i18n="exp-3-desc-2">Implementación de roles, permisos y seguridad.</span></li>
+                  <li><i class="ri-check-line"></i> <span data-i18n="exp-3-desc-3">Optimización de flujos de trabajo (reducción de tiempos).</span></li>
                 </ul>
               </div>
             </div>
@@ -131,8 +140,8 @@
       <section id="projects" class="projects section compact-section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Proyectos</h2>
-            <p class="section-subtitle">Casos de Estudio</p>
+            <h2 class="section-title" data-i18n="projects-title">Proyectos</h2>
+            <p class="section-subtitle" data-i18n="projects-subtitle">Casos de Estudio</p>
           </div>
 
           <div class="projects-grid">
@@ -149,9 +158,9 @@
                     <span class="project-tag">HealthTech</span>
                 </div>
                 <div class="project-details">
-                    <p>Ecosistema integral para la automatización segura de recetas y trazabilidad farmacéutica en tiempo real.</p>
+                    <p data-i18n="proj-1-desc">Ecosistema integral para la automatización segura de recetas y trazabilidad farmacéutica en tiempo real.</p>
                     <a href="https://github.com/Aresx12/SISTEMA-DE-GESTION-DE-MEDICA.git" target="_blank" class="project-code-link">
-                        <i class="ri-github-fill"></i> Ver Código
+                        <i class="ri-github-fill"></i> <span data-i18n="btn-view-code">Ver Código</span>
                     </a>
                 </div>
                 <div class="project-tech-mini">
@@ -175,12 +184,12 @@
               <div class="project-content">
                 <div class="project-top">
                     <h3>Medinova</h3>
-                    <span class="project-tag">Gestión</span>
+                    <span class="project-tag" data-i18n="proj-2-tag">Gestión</span>
                 </div>
                 <div class="project-details">
-                    <p>Motor de agendamiento inteligente que optimiza el flujo clínico y maximiza la eficiencia operativa.</p>
+                    <p data-i18n="proj-2-desc">Motor de agendamiento inteligente que optimiza el flujo clínico y maximiza la eficiencia operativa.</p>
                     <a href="https://github.com/Aresx12/GESTION-DE-CITAS.git" target="_blank" class="project-code-link">
-                        <i class="ri-github-fill"></i> Ver Código
+                        <i class="ri-github-fill"></i> <span data-i18n="btn-view-code">Ver Código</span>
                     </a>
                 </div>
                 <div class="project-tech-mini">
@@ -202,7 +211,7 @@
       <section id="stack" class="stack section compact-section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Stack</h2>
+            <h2 class="section-title" data-i18n="stack-title">Stack</h2>
           </div>
 
           <div class="scroller" data-speed="slow">
@@ -271,12 +280,12 @@
           <div class="cta-card gradient-bg reveal-item">
             <div class="cta-content-flex">
                 <div class="cta-text">
-                    <h2>¿Listo para optimizar tu equipo?</h2>
-                    <p>Arquitectura de software sólida y moderna.</p>
+                    <h2 data-i18n="cta-title">¿Listo para optimizar tu equipo?</h2>
+                    <p data-i18n="cta-desc">Arquitectura de software sólida y moderna.</p>
                 </div>
                 <div class="cta-btns">
                   <a href="mailto:henryrayos69@gmail.com" class="btn btn-white">
-                    <i class="ri-mail-send-line"></i> Contactar
+                    <i class="ri-mail-send-line"></i> <span data-i18n="btn-contact">Contactar</span>
                   </a>
                 </div>
             </div>
@@ -299,9 +308,14 @@
     </footer>
 
     <!-- Theme Toggle -->
-    <button class="theme-toggle" id="theme-btn" aria-label="Cambiar Tema">
-        <i class="ri-palette-line"></i>
-    </button>
+    <div class="toggles-wrapper">
+        <button class="theme-toggle" id="lang-btn" aria-label="Cambiar Idioma">
+            <span class="lang-text">ES</span>
+        </button>
+        <button class="theme-toggle" id="theme-btn" aria-label="Cambiar Tema">
+            <i class="ri-palette-line"></i>
+        </button>
+    </div>
 
     <!-- PROJECT MODAL -->
     <div id="project-modal" class="modal" aria-hidden="true">

@@ -324,8 +324,10 @@ const projectsData = {
   SAVELIFE: {
     title: "SAVELIFE",
     tag: "HealthTech",
-    description:
-      "Sistema integral para la automatización de farmacias y gestión de recetas médicas. Soluciona el problema de errores en la prescripción manual y la falta de trazabilidad en el inventario. Incluye módulos para médicos, farmacéuticos y administradores, con generación de recetas electrónicas seguras.",
+    description: {
+        es: "Sistema integral para la automatización de farmacias y gestión de recetas médicas. Soluciona el problema de errores en la prescripción manual y la falta de trazabilidad en el inventario. Incluye módulos para médicos, farmacéuticos y administradores, con generación de recetas electrónicas seguras.",
+        en: "Comprehensive system for pharmacy automation and medical prescription management. Solves the problem of errors in manual prescription and lack of inventory traceability. Includes modules for doctors, pharmacists, and administrators, with secure electronic prescription generation."
+    },
     repo: "https://github.com/Aresx12/SISTEMA-DE-GESTION-DE-MEDICA.git",
     images: [
       "assets/SaveLife-Logo.png",
@@ -345,9 +347,11 @@ const projectsData = {
   },
   Medinova: {
     title: "Medinova",
-    tag: "Gestión Administrativa",
-    description:
-      "Plataforma de gestión de citas médicas diseñada para optimizar el flujo de pacientes en clínicas. Permite agendamiento automatizado, recordatorios, y gestión de historiales clínicos básicos. Enfocado en reducir el ausentismo y mejorar la experiencia del paciente.",
+    tag: { es: "Gestión Administrativa", en: "Administrative Management" },
+    description: {
+        es: "Plataforma de gestión de citas médicas diseñada para optimizar el flujo de pacientes en clínicas. Permite agendamiento automatizado, recordatorios, y gestión de historiales clínicos básicos. Enfocado en reducir el ausentismo y mejorar la experiencia del paciente.",
+        en: "Medical appointment management platform designed to optimize patient flow in clinics. Enables automated scheduling, reminders, and basic medical history management. Focused on reducing absenteeism and improving patient experience."
+    },
     repo: "https://github.com/Aresx12/GESTION-DE-CITAS.git",
     images: [
       "assets/Medinova-logo.png",
@@ -364,6 +368,184 @@ const projectsData = {
         "ri-send-plane-fill" // Postman
     ],
   },
+};
+
+// ... (Rest of code)
+
+// --- 8. INTERNATIONALIZATION (i18n) ---
+const translations = {
+  es: {
+    "nav-experience": "Experiencia",
+    "nav-projects": "Proyectos",
+    "nav-stack": "Stack",
+    "btn-cv-es": "CV (ES)",
+    "hero-greeting": "Hola, soy",
+    "hero-role": "Ingeniero de Software",
+    "hero-desc": "Transformo ideas complejas en soluciones digitales elegantes. Especializado en arquitecturas escalables y experiencias de usuario inmersivas.",
+    "btn-download-es": "CV Español",
+    "btn-download-en": "CV Inglés",
+    "exp-title": "Experiencia Profesional",
+    "exp-subtitle": "Trayectoria & Logros",
+    "exp-1-date": "Dic 2024 - Feb 2025",
+    "exp-1-role": "Técnico TIC",
+    "exp-1-company": "Centro Privado de Seguridad Industrial (Ecuador)",
+    "exp-1-desc-1": "Soporte de primer nivel durante digitalización de sistemas.",
+    "exp-1-desc-2": "Gestión de credenciales y accesos remotos seguros.",
+    "exp-1-desc-3": "Documentación de procedimientos técnicos.",
+    "exp-2-date": "Sept 2023 - Feb 2024",
+    "exp-2-role": "Programador de Software",
+    "exp-2-company": "Escuela Superior Politécnica de Chimborazo",
+    "exp-2-desc-1": "Desarrollo de módulo financiero con SQL complejo.",
+    "exp-2-desc-2": "Refactorización del Sistema de Pólizas (estabilidad).",
+    "exp-2-desc-3": "Diagnóstico y corrección de integridad de datos.",
+    "exp-3-date": "Mar 2023 - Ago 2023",
+    "exp-3-role": "FullStack Developer",
+    "exp-3-company": "Farmacia Particular \"Pharmacity\"",
+    "exp-3-desc-1": "Sistema de Gestión Farmacéutica desde cero (Full Stack).",
+    "exp-3-desc-2": "Implementación de roles, permisos y seguridad.",
+    "exp-3-desc-3": "Optimización de flujos de trabajo (reducción de tiempos).",
+    "projects-title": "Proyectos",
+    "projects-subtitle": "Casos de Estudio",
+    "proj-1-desc": "Ecosistema integral para la automatización segura de recetas y trazabilidad farmacéutica en tiempo real.",
+    "btn-view-code": "Ver Código",
+    "proj-2-tag": "Gestión",
+    "proj-2-desc": "Motor de agendamiento inteligente que optimiza el flujo clínico y maximiza la eficiencia operativa.",
+    "stack-title": "Stack",
+    "cta-title": "¿Listo para optimizar tu equipo?",
+    "cta-desc": "Arquitectura de software sólida y moderna.",
+    "btn-contact": "Contactar"
+  },
+  en: {
+    "nav-experience": "Experience",
+    "nav-projects": "Projects",
+    "nav-stack": "Stack",
+    "btn-cv-es": "CV",
+    "hero-greeting": "Hi, I'm",
+    "hero-role": "Software Engineer",
+    "hero-desc": "I transform complex ideas into elegant digital solutions. Specialized in scalable architectures and immersive user experiences.",
+    "btn-download-es": "Spanish CV",
+    "btn-download-en": "English CV",
+    "exp-title": "Professional Experience",
+    "exp-subtitle": "Career & Achievements",
+    "exp-1-date": "Dec 2024 - Feb 2025",
+    "exp-1-role": "ICT Technician",
+    "exp-1-company": "Private Industrial Security Center (Ecuador)",
+    "exp-1-desc-1": "Level 1 support during system digitization.",
+    "exp-1-desc-2": "Secure remote access and credential management.",
+    "exp-1-desc-3": "Documentation of technical procedures.",
+    "exp-2-date": "Sept 2023 - Feb 2024",
+    "exp-2-role": "Software Programmer",
+    "exp-2-company": "Chimborazo Polytechnic Higher School",
+    "exp-2-desc-1": "Financial module development with complex SQL.",
+    "exp-2-desc-2": "Policy System refactoring (stability).",
+    "exp-2-desc-3": "Data integrity diagnosis and correction.",
+    "exp-3-date": "Mar 2023 - Aug 2023",
+    "exp-3-role": "FullStack Developer",
+    "exp-3-company": "Private Pharmacy \"Pharmacity\"",
+    "exp-3-desc-1": "Pharmaceutical Management System from scratch (Full Stack).",
+    "exp-3-desc-2": "Role implementation, permissions, and security.",
+    "exp-3-desc-3": "Workflow optimization (time reduction).",
+    "projects-title": "Projects",
+    "projects-subtitle": "Case Studies",
+    "proj-1-desc": "Comprehensive ecosystem for safe prescription automation and real-time pharmaceutical traceability.",
+    "btn-view-code": "View Code",
+    "proj-2-tag": "Management",
+    "proj-2-desc": "Intelligent scheduling engine that optimizes clinical flow and maximizes operational efficiency.",
+    "stack-title": "Stack", // Or Tech Stack
+    "cta-title": "Ready to optimize your team?",
+    "cta-desc": "Solid and modern software architecture.",
+    "btn-contact": "Contact"
+  }
+};
+
+let currentLang = "es";
+const langBtn = document.getElementById("lang-btn");
+const langText = langBtn.querySelector(".lang-text");
+
+function updateLanguage(lang) {
+  currentLang = lang;
+  langText.textContent = lang.toUpperCase();
+  
+  // Update all data-i18n elements
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+
+  // Update Navbar CV Button Link
+  const navCvBtn = document.querySelector(".btn-cv-mobile");
+  if (navCvBtn) {
+      if (lang === "en") {
+          navCvBtn.href = "assets/CV_Teddy_Rayos_Ponce_EN.pdf";
+          navCvBtn.textContent = "CV (EN)";
+      } else {
+          navCvBtn.href = "assets/CV_Teddy_Rayos_Ponce.pdf";
+          navCvBtn.textContent = "CV (ES)";
+      }
+  }
+
+  // Update Modal if open
+  if (document.getElementById("project-modal").classList.contains("open") && currentProject) {
+      loadModalData(currentProject);
+  }
+}
+
+langBtn.addEventListener("click", () => {
+    const newLang = currentLang === "es" ? "en" : "es";
+    updateLanguage(newLang);
+});
+
+// Update loadModalData to use currentLang
+const originalLoadModalData = loadModalData;
+loadModalData = function(data) {
+   modalTitle.textContent = data.title;
+   // Tag handling
+   if (typeof data.tag === 'object') {
+       modalTag.textContent = data.tag[currentLang] || data.tag.es;
+   } else {
+       modalTag.textContent = data.tag;
+   }
+   
+   // Description handling
+   if (typeof data.description === 'object') {
+       modalDesc.textContent = data.description[currentLang] || data.description.es;
+   } else {
+       modalDesc.textContent = data.description;
+   }
+
+   modalRepo.href = data.repo;
+
+   // Stack Icons
+  modalStack.innerHTML = data.stack
+    .map((item) => {
+      if (item.includes("assets/")) {
+        return `<img src="${item}" alt="Tech" class="icon-svg-mimic">`;
+      }
+      return `<i class="${item}"></i>`;
+    })
+    .join("");
+
+  // Load Initial Images Stack
+  const stackContainer = document.querySelector(".gallery-stack");
+  stackContainer.innerHTML = "";
+  stackContainer.style.setProperty("--n", data.images.length);
+
+  data.images.forEach((src, i) => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.classList.add("gallery-item");
+    img.dataset.index = i;
+    // Initial state: 0 is active
+    if (i === 0) img.classList.add("active");
+    else if (i === 1) img.classList.add("next");
+    else if (i === data.images.length - 1) img.classList.add("prev");
+    
+    stackContainer.appendChild(img);
+  });
+  
+  updateDots(0);
 };
 
 // Elements
